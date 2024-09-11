@@ -162,10 +162,11 @@ class ScreenshotController {
           alignment: Alignment.center, child: repaintBoundary),
       configuration: ViewConfiguration(
         // size: logicalSize,
-        // logicalConstraints: BoxConstraints(
-        //   maxWidth: logicalSize.width,
-        //   maxHeight: logicalSize.height,
-        // ),
+
+        logicalConstraints: BoxConstraints(
+          maxWidth: logicalSize.width,
+          maxHeight: logicalSize.height,
+        ),
         devicePixelRatio: pixelRatio ?? 1.0,
       ),
     );
